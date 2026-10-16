@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-void-950 text-void-100 antialiased;
+  }
+  ::selection {
+    @apply bg-accent/30 text-white;
+  }
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0c0c0e; }
+::-webkit-scrollbar-thumb { background: #393941; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #8b5cf6; }
